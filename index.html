@@ -11,8 +11,8 @@
     <!-- Header Menu of the Page -->
     <header>
       <!-- Logo -->
-      <div>
-        <img src="/img/logo.png" />
+      <div id="logo">
+        <a href="index.html"><img src="/img/logo.png" alt="image of logo" /></a>
       </div>
 
       <!-- Navigation Menu -->
@@ -24,12 +24,15 @@
         </ul>
       </nav>
     </header>
+
     <!-- Main -->
     <main>
-      <div><h2>F4.Layout</h2></div>
-      <div>
+      <div class="heading">
+        <h2>F4.Layout</h2>
+      </div>
+      <!-- Fråga a -->
+      <div class="right">
         <ul>
-          <!-- Fråga a -->
           <li>
             a. Då man skapar en layout med grid används bl.a. CSS-egenskaperna
             grid-template-columns, grid-template-rows och grid-template-areas.
@@ -38,42 +41,52 @@
         </ul>
 
         <!-- Svar fråga a -->
-        <div>
+        <div class="fa">
           <h4>Svar:</h4>
           <ul>
             <li>
               Grid-template-columns används till att skapa och specifiera
-              bredden på kolumnerna
+              bredden på kolumnerna. (Bild: Exempel 1)
             </li>
             <li>
               Grid-template-rows används för att skapa och specifiera höjden på
-              raderna
+              raderna. (Bild: Exempel 1)
             </li>
             <li>
               Grid-template-areas används för att specifiera grid-mallen genom
-              att referera till angivna namn på specifika område
+              att referera till angivna namn på specifika område. (Bild: Exampel
+              1 och Exempel 2)
             </li>
           </ul>
         </div>
-        <!-- Fråga b -->
         <ul>
           <li>b. Vad är en media query och vad används den till?</li>
         </ul>
         <!-- Svar fråga b -->
         <div>
           <h4>Svar:</h4>
-          <p></p>
+          <p>Media queries</p>
         </div>
       </div>
-      <div></div>
+
+      <!-- Fråga b -->
+      <div class="left">
+        <div class="aside">
+          <!-- Image columns -->
+          <figure class="img-left">
+            <img src="/img/codesnap1.png" alt="code example of grid template" />
+            <figcaption class="grid-fig">
+              Exempel 1: grid-template-columns
+            </figcaption>
+          </figure>
+          <!-- Img grid area -->
+          <figure class="img-right">
+            <img src="/img/codesnap2.png" alt="code example of grid template" />
+            <figcaption class="grid-fig">Exempel 2: grid-area</figcaption>
+          </figure>
+        </div>
+      </div>
     </main>
-    <hr />
-    <!-- Aside -->
-    <aside>
-      <p>Picture</p>
-    </aside>
-    <hr />
-    <hr />
     <!-- Footer -->
     <footer>I am a footer</footer>
   </body>
