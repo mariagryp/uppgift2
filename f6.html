@@ -5,20 +5,114 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uppgift 2</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <h1>Uppgift 2</h1>
-    </header>
+    <!-- Navigering -->
     <nav>
-      <ul>
+      <!-- Logo -->
+      <div id="logo">
+        <a href="index.html"><img src="/img/logo.png" alt="image of logo" /></a>
+      </div>
+
+      <!-- Nav menu -->
+      <!-- Mobile menu icon -->
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn"> </label>
+
+      <!-- Desktop navigation -->
+      <ul class="nav">
         <li><a href="index.html">Layout</a></li>
         <li><a href="f5.html">Navigering</a></li>
-        <li><a href="f6.html">Målgruppsanalys och kravspecifikation</a></li>
+        <li>
+          <a href="f6.html" class="thisPage"
+            >Målgruppsanalys och kravspecifikation</a
+          >
+        </li>
       </ul>
     </nav>
+
+    <!-- Main -->
     <main>
-      <h2>F6. Målgruppsanalys och kravspecifikation</h2>
+      <!-- Header -->
+      <header>
+        <h2>Målgruppsanalys och kravspecifikation</h2>
+      </header>
+      <!-- Frågor -->
+
+      <!-- Fråga a -->
+      <section class="content1">
+        <div class="question1">
+          <h3>Frågor:</h3>
+          <ul class="">
+            <li>
+              Ett resultat i målgruppsanalysen är
+              <i>"användarnas behov" (user needs)</i>. Beskriv vad detta är och
+              vad det ska användas till.
+            </li>
+            <li>
+              I en kravspecifikation är det viktigt att kraven skrivs, så att de
+              är <b>mätbara</b>.
+              <ul>
+                <li>
+                  Vad bör man tänka på då man formulerar ett krav, så att det är
+                  mätbart?
+                </li>
+                <li>
+                  Ge ett eget exempel på ett mätbart krav, som skulle kunna ingå
+                  i en kravspecifikation för en webbplats.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- svar a -->
+        <div class="answer1">
+          <h4>Svar:</h4>
+          <ul>
+            <li>Svar a...</li>
+            <li>Svar b...</li>
+          </ul>
+        </div>
+      </section>
     </main>
+    <!--End of Main Section-->
+
+    <!-- 
+    <aside>
+      <figure class="img-1">
+        <img
+          id="img"
+          src="/img/codesnap1.png"
+          alt="code example of grid template"
+        />
+        <figcaption class="grid-fig">
+          Exempel 1: grid-template-columns
+        </figcaption>
+      </figure>
+      <figure class="img-2">
+        <img
+          id="img"
+          src="/img/codesnap2.png"
+          alt="code example of grid template"
+        />
+        <figcaption class="grid-fig">Exempel 2: grid-area</figcaption>
+      <figure class="">
+        <img
+          id="img"
+          src="/img/code.png"
+          alt="code example of Media queries code"
+        />
+        <figcaption class="grid-fig">Exempel 3: Media queries</figcaption>
+      </figure>
+    </aside> -->
+    <!--Footer-->
+    <footer>
+      <p>
+        Webbplats för Uppgift 2 by &copy; Maria Grypishyna i kursen
+        <span>Webbteknik 1, 23VT, Linnéuniversitetet. </span>
+      </p>
+    </footer>
+    <!--End of Footer-->
   </body>
 </html>

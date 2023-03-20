@@ -8,94 +8,145 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Header Menu of the Page -->
-    <header>
+    <!-- Navigering -->
+    <nav>
       <!-- Logo -->
       <div id="logo">
         <a href="index.html"><img src="/img/logo.png" alt="image of logo" /></a>
       </div>
 
-      <!-- Navigation Menu -->
-      <nav>
-        <ul>
-          <li><a href="index.html">Layout</a></li>
-          <li><a href="f5.html">Navigering</a></li>
-          <li><a href="f6.html">Målgruppsanalys och kravspecifikation</a></li>
-        </ul>
-      </nav>
-    </header>
+      <!-- Nav menu -->
+      <!-- Mobile menu icon -->
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn"> </label>
+
+      <!-- Desktop navigation -->
+      <ul class="nav">
+        <li><a href="index.html" class="thisPage">Layout</a></li>
+        <li><a href="f5.html">Navigering</a></li>
+        <li><a href="f6.html">Målgruppsanalys och kravspecifikation</a></li>
+      </ul>
+    </nav>
+
+    <!-- Navigering -->
+    <!-- <nav>
+      <div id="logo">
+        <a href="index.html"><img src="/img/logo.png" alt="image of logo" /></a>
+      </div>
+
+      <ul class="nav">
+        <li><a href="index.html">Fråga 1</a></li>
+        <li><a href="f5.html">Fråga 2</a></li>
+        <li><a href="f6.html">Fråga 3</a></li>
+      </ul>
+    </nav> -->
 
     <!-- Main -->
     <main>
-      <div class="heading">
-        <h2>F4.Layout</h2>
-      </div>
-      <!-- Fråga a -->
-      <div class="right">
-        <h3>Fråga a:</h3>
-        <ul>
-          <li>
-            Då man skapar en layout med grid används bl.a. CSS-egenskaperna
-            grid-template-columns, grid-template-rows och grid-template-areas.
-            Beskriv vad dessa används till.
-          </li>
-        </ul>
+      <!-- Header -->
+      <header>
+        <h2>Layout</h2>
+      </header>
+      <!-- Frågor -->
 
-        <!-- Svar fråga a -->
-        <div class="fa">
+      <!-- Fråga a -->
+      <section class="content1">
+        <div class="question1">
+          <h3>Fråga a:</h3>
+          <ul>
+            <li>
+              Då man skapar en layout med grid används bl.a. CSS-egenskaperna
+              <i
+                >grid-template-columns, grid-template-rows och
+                grid-template-areas</i
+              >. Beskriv vad dessa används till.
+            </li>
+          </ul>
+        </div>
+        <!-- svar a -->
+        <div class="answer1">
           <h4>Svar:</h4>
           <ul>
             <li>
               Grid-template-columns används till att skapa och specifiera
-              bredden på kolumnerna. (Bild: Exempel 1)
+              bredden på kolumnerna.<span>(Exempel 1)</span>
             </li>
             <li>
               Grid-template-rows används för att skapa och specifiera höjden på
-              raderna. (Bild: Exempel 1)
+              raderna.<span>(Exempel 1)</span>
             </li>
             <li>
               Grid-template-areas används för att specifiera grid-mallen genom
-              att referera till angivna namn på specifika område. (Bild: Exampel
-              1 och Exempel 2)
+              att referera till angivna namn på specifika område.<span
+                >(Exempel 1, Exempel 2)</span
+              >
             </li>
           </ul>
         </div>
-        <!-- Fråga b -->
-        <h3>Fråga b:</h3>
-        <ul>
-          <li>Vad är en media query och vad används den till?</li>
-        </ul>
-        <!-- Svar fråga b -->
-        <div class="fa">
+      </section>
+      <!-- Fråga b -->
+      <section class="content2">
+        <div class="question2">
+          <h3>Fråga b:</h3>
+          <ul>
+            <li>Vad är en <i>media query</i> och vad används den till?</li>
+          </ul>
+        </div>
+        <!-- Svar b -->
+        <div class="answer2">
           <h4>Svar:</h4>
           <ul>
             <li>
-              Med hjälp av Media queries gör vi förändringar i layouten så att
-              anpassa denna till specifik skärmstorlek och gör webbsidan
-              responsive.
+              Med hjälp av Media queries gör vi förändringar i koden så att
+              anpassa layouten till specifik skärmstorlek och på så sätt gör
+              webbsidan responsive.<span>(Exempel 3)</span>
             </li>
           </ul>
         </div>
-      </div>
-
-      <div class="left">
-        <div class="aside">
-          <!-- Image columns -->
-          <figure class="img-left">
-            <img src="/img/codesnap1.png" alt="code example of grid template" />
-            <figcaption class="grid-fig">
-              Exempel 1: grid-template-columns
-            </figcaption>
-          </figure>
-          <!-- Img grid area -->
-          <figure class="img-right">
-            <img src="/img/codesnap2.png" alt="code example of grid template" />
-            <figcaption class="grid-fig">Exempel 2: grid-area</figcaption>
-          </figure>
-        </div>
-      </div>
+      </section>
     </main>
-    <!-- Footer -->
-    <footer>I am a footer</footer>
+    <!--End of Main Section-->
+
+    <!-- Aside -->
+    <aside>
+      <!-- Images -->
+      <!-- Image columns -->
+      <figure class="img-1">
+        <img
+          id="img"
+          src="/img/codesnap1.png"
+          alt="code example of grid template"
+        />
+        <figcaption class="grid-fig">
+          Exempel 1: grid-template-columns
+        </figcaption>
+      </figure>
+      <!-- Img grid area -->
+      <figure class="img-2">
+        <img
+          id="img"
+          src="/img/codesnap2.png"
+          alt="code example of grid template"
+        />
+        <figcaption class="grid-fig">Exempel 2: grid-area</figcaption>
+      </figure>
+      <!-- Media queries image -->
+      <figure class="">
+        <img
+          id="img"
+          src="/img/code.png"
+          alt="code example of Media queries code"
+        />
+        <figcaption class="grid-fig">Exempel 3: Media queries</figcaption>
+      </figure>
+    </aside>
+    <!--Footer-->
+    <footer>
+      <p>
+        Webbplats för Uppgift 2 by &copy; Maria Grypishyna i kursen
+        <span>Webbteknik 1, 23VT, Linnéuniversitetet. </span>
+      </p>
+    </footer>
+    <!--End of Footer-->
   </body>
 </html>
