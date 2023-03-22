@@ -178,6 +178,11 @@ figure {
   font-size: 0.7rem;
 }
 
+.f6_example {
+  padding-left: 3rem;
+  padding-right: 2rem;
+}
+
 footer {
   grid-area: footer;
   display: flex;
