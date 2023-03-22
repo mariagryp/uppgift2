@@ -3,20 +3,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  line-height: 1.3;
-  font-family: "Times New Roman", Times, serif;
 }
 
 html,
 body {
-  width: 100%;
-  box-sizing: border-box;
-  font-size: 1.2rem;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  font-family: "Times New Roman", Times, serif;
 }
 
+/* Image/logo style */
 img {
   max-width: 100%;
 }
@@ -29,12 +29,8 @@ img {
 #img:hover {
   -ms-transform: scale(1.5);
   -webkit-transform: scale(1.5);
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
-
-/* #logo {
-  padding-left: 2rem;
-} */
 
 #logo a img {
   width: 190px;
@@ -53,6 +49,7 @@ body {
     "footer footer footer footer footer footer footer footer";
 }
 
+/* ---Navigering Style--- */
 nav {
   grid-area: nav;
   display: flex;
@@ -105,35 +102,6 @@ nav .menu-btn {
   display: none;
 }
 
-/* ---Navigering Style--- */
-/* nav {
-  grid-area: nav;
-  display: flex;
-  align-items: center;
-}
-
-#logo {
-  padding-left: 2rem;
-}
-
-#logo a img {
-  width: 200px;
-}
-
-.nav li {
-  display: inline-block;
-  padding-right: 1em;
-  list-style: none;
-}
-
-.nav li a {
-  font-size: 20px;
-  color: black;
-  font-weight: bold;
-  text-transform: lowercase;
-  text-decoration: none;
-} */
-
 /* ---Header Style--- */
 header {
   grid-area: header;
@@ -145,6 +113,7 @@ header h2 {
   padding-left: 1.5rem; */
 }
 
+/* Main style */
 main {
   grid-area: main;
   display: grid;
@@ -164,6 +133,11 @@ main {
 
 .content1 {
   grid-area: content1;
+  padding-top: 1rem;
+}
+.content1 h3 {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
 }
 .content2 {
   grid-area: content2;
@@ -186,9 +160,9 @@ aside {
   box-shadow: 6px 8px 75px 30px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 6px 8px 75px 30px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 6px 8px 75px 30px rgba(0, 0, 0, 0.75);
+  padding-top: 5rem;
   margin-bottom: 3rem;
   margin-top: 3rem;
-  /*  background-color: rgba(173, 162, 225, 0.5); */
 }
 
 figure {
@@ -250,14 +224,10 @@ footer p {
   }
 
   #img {
-    width: 300px;
-    transition: transform 0.3s;
+    width: 550px;
+    pointer-events: none;
   }
-  #img:hover {
-    -ms-transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
-  }
+
   footer p {
     font-size: 0.7rem;
     padding: 1rem;
