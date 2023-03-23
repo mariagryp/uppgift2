@@ -117,8 +117,10 @@ header {
   grid-area: header;
 }
 
-header h2 {
-  font-size: 1.7rem;
+header h2,
+.f6_h2 h2 {
+  font-size: 1.5rem;
+
   /* 
   padding-left: 1.5rem; */
 }
@@ -128,7 +130,7 @@ main {
   grid-area: main;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 50px auto auto;
+  grid-template-rows: 60px auto auto;
   grid-template-areas:
     "header"
     "content1"
@@ -148,6 +150,8 @@ main {
 .content1 h3 {
   font-size: 1.2rem;
   padding-bottom: 0.5rem;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 .content2 {
   grid-area: content2;
@@ -250,11 +254,11 @@ footer p {
   .img_5 {
     pointer-events: none;
   }
-
-  footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  #f6 {
+    padding-top: 1rem;
+  }
+  .f6_h2 h2 {
+    font-size: 1.5rem;
   }
 }
 
@@ -301,11 +305,5 @@ footer p {
 
   footer p {
     font-size: 0.7em;
-  }
-}
-
-@media (max-width: 590px) {
-  .f6_h2 h2 {
-    font-size: 1rem;
   }
 }
